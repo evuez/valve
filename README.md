@@ -1,4 +1,6 @@
 # Valve
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fevuez%2Fvalve.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fevuez%2Fvalve?ref=badge_shield)
+
 
 An Elixir Plug to rate-limit requests to your web app.
 
@@ -59,3 +61,7 @@ config :valve, Valve.Store.ETS,
   ttl: 48 * 3_600, # How much time (in seconds) before an entry should get swept (defaults to a day)
   sweep_interval: 7_200 * 1000 # How often (in milliseconds) should stale entries be cleaned (defaults to an hour)
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fevuez%2Fvalve.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fevuez%2Fvalve?ref=badge_large)
