@@ -3,7 +3,7 @@ defmodule Valve.Mixfile do
 
   def project do
     [app: :valve,
-     version: "0.1.0",
+     version: "0.2.0",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -20,7 +20,7 @@ defmodule Valve.Mixfile do
   end
 
   defp deps do
-    [{:plug, "~> 1.4.3"},
+    [{:plug, "~> 1.5"},
      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
      {:benchfella, "~> 0.3.0", only: [:dev, :test], runtime: false},
      {:ex_doc, ">= 0.0.0", only: :dev}]
